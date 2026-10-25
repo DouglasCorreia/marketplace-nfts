@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-kurio-canvas: #140d0a;
+  --color-kurio-ink: #f5f1eb;
+  --color-kurio-panel: #241612;
+  --color-kurio-panel-raised: #38220f;
+  --color-kurio-accent: #d28a4c;
+  --color-kurio-amber: #e89b55;
+  --color-kurio-muted: #cfb28c;
+  --color-kurio-line: #3f2319;
+  --color-kurio-line-soft: #55321f;
+  --font-kurio: 'Roboto', Arial, sans-serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { min-width: 320px; margin: 0; background: var(--color-kurio-canvas); color: var(--color-kurio-ink); font-family: var(--font-kurio); font-optical-sizing: auto; }
+  button, input, select, textarea { font: inherit; }
+  a { color: inherit; text-decoration: none; }
+  button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+  :focus-visible { outline: 2px solid var(--color-kurio-amber); outline-offset: 3px; }
+  ::selection { color: var(--color-kurio-canvas); background: var(--color-kurio-amber); }
+
+  option{
+    @apply text-kurio-canvas;
+  }
+}
+
