@@ -1,6 +1,6 @@
-import { Link, useRouterState } from '@tanstack/react-router'
+import { Link } from '@tanstack/react-router'
 import { LogIn, Search, ShoppingCart, UserRound } from 'lucide-react'
-import { useState, type ReactNode } from 'react'
+import { useState } from 'react'
 import { useSession } from '../../features/account/queries'
 import type { CatalogCategory, CatalogSort } from '../../domain/catalog/catalog'
 

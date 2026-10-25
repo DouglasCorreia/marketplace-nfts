@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Heart, ShoppingCart, ArrowLeft, Mail, Share2 } from "lucide-react";
+import { Heart, ShoppingCart, ArrowLeft, Mail } from "lucide-react";
 import { Link, useNavigate, useParams } from "@tanstack/react-router";
 import { Button } from "../../components/ui/button";
 import {
