@@ -2,8 +2,8 @@ import { createRootRoute, createRoute, createRouter, Outlet } from '@tanstack/re
 import { lazy, Suspense, type ReactNode } from 'react'
 import { AppShell } from '../components/layout/AppShell'
 import { parseCatalogSearch } from '../domain/catalog/catalog'
+import { CatalogPage } from '../features/catalog/CatalogPage'
 
-const CatalogPage = lazy(() => import('../features/catalog/CatalogPage').then(({ CatalogPage }) => ({ default: CatalogPage })))
 const NFTPage = lazy(() => import('../features/catalog/NFTPage').then(({ NFTPage }) => ({ default: NFTPage })))
 const CartPage = lazy(() => import('../features/cart/CartPage').then(({ CartPage }) => ({ default: CartPage })))
 const CheckoutPage = lazy(() => import('../features/checkout/CheckoutPage').then(({ CheckoutPage }) => ({ default: CheckoutPage })))
